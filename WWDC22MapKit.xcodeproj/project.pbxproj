@@ -302,6 +302,7 @@
 				DEVELOPMENT_TEAM = RKA7R98LN8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WWDC22MapKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AdvancedMap;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,6 +333,7 @@
 				DEVELOPMENT_TEAM = RKA7R98LN8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WWDC22MapKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AdvancedMap;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
