@@ -34,12 +34,15 @@ class LookViewController: UIViewController {
             vc.scene = selectedScene
         }
     }
-    
 }
 
 extension LookViewController: MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, didSelect annotation: MKAnnotation) {
+        searchLookAround(from: annotation)
+    }
+    
+    func searchLookAround(from annotation: MKAnnotation){
         let sceneRequest = MKLookAroundSceneRequest(coordinate: annotation.coordinate)
         sceneRequest.getSceneWithCompletionHandler { scene, error in
             if let error{
@@ -52,10 +55,8 @@ extension LookViewController: MKMapViewDelegate{
                 if let lookAroundViewController{
                     lookAroundViewController.scene = scene
                 }
-
             }
         }
-        
     }
     
     func mapView(_ mapView: MKMapView, didDeselect annotation: MKAnnotation) {

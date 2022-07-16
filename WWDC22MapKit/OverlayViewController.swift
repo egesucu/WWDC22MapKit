@@ -65,12 +65,9 @@ class OverlayViewController: UIViewController {
                     self.mapView.addOverlay(circle)
 
                 }
-                
             }
         }
-        
     }
-
 }
 
 extension OverlayViewController: MKMapViewDelegate{
