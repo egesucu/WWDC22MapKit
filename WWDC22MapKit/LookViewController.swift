@@ -51,7 +51,6 @@ extension LookViewController: MKMapViewDelegate{
                 let lookAroundViewController = self.children.compactMap { $0 as? MKLookAroundViewController }.first
                 if let lookAroundViewController{
                     lookAroundViewController.scene = scene
-                    lookAroundViewController.delegate = self
                 }
 
             }
@@ -68,15 +67,5 @@ extension LookViewController: MKMapViewDelegate{
         markerView.animatesWhenAdded = true
         markerView.titleVisibility = .adaptive
         return markerView
-    }
-}
-
-extension LookViewController: MKLookAroundViewControllerDelegate{
-    func lookAroundViewControllerWillUpdateScene(_ viewController: MKLookAroundViewController) {
-        viewController.scene = selectedScene
-    }
-    
-    func lookAroundViewControllerDidUpdateScene(_ viewController: MKLookAroundViewController) {
-        viewController.scene = selectedScene
     }
 }
