@@ -24,6 +24,8 @@ class LookViewController: UIViewController {
         mapView.selectableMapFeatures = [.physicalFeatures,.pointsOfInterest,.territories]
         
         lookView.isHidden = true
+        lookView.layer.masksToBounds = true
+        lookView.layer.cornerRadius = 10
        
     }
     
